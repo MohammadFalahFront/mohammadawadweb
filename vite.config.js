@@ -1,8 +1,9 @@
 import { defineConfig } from 'vite'
+import tailwindcss from '@tailwindcss/vite'
 import vue from '@vitejs/plugin-vue'
 
+// https://vite.dev/config/
 export default defineConfig({
-  plugins: [vue()],
-  // استبدل 'repo-name' باسم المستودع الذي أنشأته على Github حرفياً
-  base: '/mohammadawad/', 
+  base: '/mohammadfalah/',
+  plugins: [vue(), tailwindcss(),],
 })
